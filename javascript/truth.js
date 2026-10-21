@@ -40,12 +40,12 @@ function truthlie() {
 
     // give result based on what they selected
     if (truth1Selected) {
-        triviaAnswer.innerHTML = fname + ", you are wrong.";
+        truthlieAnswer.innerHTML = fname + ", you are wrong.";
     }
     else if (truth2Selected) {
-        triviaAnswer.innerHTML = fname + ", you are incorrect.";
+        truthlieAnswer.innerHTML = fname + ", you are incorrect.";
     }
     else if (lieSelected) {
-        triviaAnswer.innerHTML = fname + ", you are correct!";
+        truthlieAnswer.innerHTML = fname + ", you are correct!";
     }
 }
