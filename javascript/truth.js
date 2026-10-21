@@ -29,3 +29,23 @@ function trivia1() {
         triviaAnswer.innerHTML = fname + ", you are correct!";
     }
 }
+
+function truthlie() {
+    let truthlieAnswer = document.getElementById("truthlie-answer");
+
+    // get values from form
+    let truth1Selected = document.getElementById("truth1").checked;
+    let truth2Selected = document.getElementById("truth2").checked;
+    let lieSelected = document.getElementById("lie").checked;
+
+    // give result based on what they selected
+    if (truth1Selected) {
+        triviaAnswer.innerHTML = fname + ", you are wrong.";
+    }
+    else if (truth2Selected) {
+        triviaAnswer.innerHTML = fname + ", you are incorrect.";
+    }
+    else if (lieSelected) {
+        triviaAnswer.innerHTML = fname + ", you are correct!";
+    }
+}
